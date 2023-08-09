@@ -11,14 +11,19 @@
 <body>
     <main>
         <div class="nav">
-            <img src="assets/logo.png" alt="Logo" class="logo">
-            <h1 class="head">aqueduct</h1>
+            <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+            <h1 ><a href="index.html" class="head">aqueduct</a></h1>
             <nav>
+                <div class="menu">
+                    <button class="open">&#9776;</button>
+                    <button class="close">&#10006;</button>
+                    
                 <ul>
-                    <li><i class="fas fa-file" style="font-size: x-large;"></i><a href="#">Docs</a></li>
-                    <li><i class="fab fa-github" style="font-size: x-large;"></i><a href="#">Code</a></li>
-                    <li class="btn"><a href="#">Contact Us</a></li>
+                    <li><i class="fas fa-file" style="font-size: x-large;"></i><a href="https://aqueduct-finance.gitbook.io/">Docs</a></li>
+                    <li><i class="fab fa-github" style="font-size: x-large;"></i><a href="https://github.com/aqueduct-finance">Code</a></li>
+                    <li class="btn"><a href="mailto:blaine@aqueductfinance.com">Contact Us</a></li>
                 </ul>
+                  </div>
             </nav>
         </div>
        <div class="first"> <div class="swap">
@@ -36,7 +41,7 @@
                 Powered by <br>money streams. As a new primitive for time-<br>based swaps,
                 We enable you to swap tokens<br>every second.
             </p>
-            <button class="demo">Book a Demo</button>
+            <button class="demo"> <a href="https://calendly.com/blaine-aqueduct/15-minute-meeting">Book a Demo</a></button>
         </div>
     </div>
     <div class="bottom">
@@ -47,22 +52,24 @@
             <button class="fl"  onclick="showToken()">Token <br>Divesting</button>
             <button class="fl"  onclick="showLaunchpad()">Launchpad</button>
         </div>
-        <div id="auto"></div>
-        <button class="learn">Learn More</button>
+        <div id="auto">
+            <h2>Automated <br>Investing</h2><p>Effortlessly acquire your preferred<br> token over time with a few clicks.<br> Simply choose a token pair, indicate<br> the desired swap rate, and then<br> leave the rest to us. Embrace the<br> convenience of growing your<br> portfolio as you watch your<br> investment accumulate, second by<br> second.</p>
+        </div>
+        <button class="learn"><a href="https://www.aqueduct.fi/investing">Learn More </a></button>
     </div>
     <div class="foot">
         <button class="twitter">
-            <a href="#">
-                <h2>Stay up to date <i class="fa-twitter"></i></h2>
+            <a href="https://twitter.com/AqueductFinance">
+                <h2>Stay up to date <img src="assets/twitter.svg" alt="Twitter" style="fill: red;" class="ic"></h2>
             
             <p>Join <b>2268</b> followers on twitter</p>
             </a>
         </button>
         <button class="discord">
-           <a href="#">
+           <a href="https://discord.gg/6dDYxvhqnt">
             <h2>
                 Get involved
-                <i class="fa-discord"></i>
+                <img src="assets/discord.svg" alt="Discord" class="ic">
             </h2>
             
             <p>
@@ -72,9 +79,11 @@
         </button>
     </div>
     <footer>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-discord"></i>
-        <i class="fa-brands fa-medium"></i>
+       <ul>
+        <a href="https://twitter.com/AqueductFinance"><img src="assets/twitter (1).svg" alt="Twitter" class="ic"></a>
+       <a href="https://discord.gg/6dDYxvhqnt"><img src="assets/discord (1).svg" alt="Discord" class="ic"></a>
+       <a href="https://aqueductfinance.medium.com/"><img src="assets/medium.svg" alt="Medium" class="ic"></a>
+       </ul>
     </footer>
     </main>
     <script src="script.js"></script>

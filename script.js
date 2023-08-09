@@ -10,3 +10,20 @@ function showToken() {
 function showLaunchpad() {
   document.getElementById("auto").innerHTML = "<h2>Launchpad</h2> <p>Immediately start gaining access to<br> funds when you launch a new token.<br> Slowly distribute new tokens to your<br> investment community while<br> immediately gaining access to<br> funding as you distribute. Launching<br> on a time-based AMM also helps to<br> mitigate the risk of rug pools.</P>"
 }
+
+
+const menu = document.querySelector('.menu');
+const openBtn = document.querySelector('.open');
+const closeBtn = document.querySelector('.close');
+
+openBtn.addEventListener('click', () => {
+  menu.classList.add('open');
+  openBtn.classList.add('close');
+  closeBtn.classList.remove('close');
+});
+
+closeBtn.addEventListener('click', () => {
+  menu.classList.remove('open');
+  openBtn.classList.remove('close');
+  closeBtn.classList.add('close');
+});
