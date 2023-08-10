@@ -142,6 +142,8 @@ button {
 .ic {
     width: 50px;
     color: blue;
+    margin-left: 240px;
+    margin-top: 5px;
 }
 .demo:hover {
     background-color: rgba(0, 0, 255, 0.799);
@@ -155,7 +157,7 @@ button {
 .bottom {
     background-color: rgba(0, 0, 255, 0.799);
     width: 70%;
-    height: 1100px;
+    height: 1200px;
     margin-top: 400px;
     margin-left: 330px;
     border-radius: 10px;
@@ -181,7 +183,7 @@ h3 {
     width: 200px;
     height: 100px
 }
-.fl:active {
+.fl:hover {
     background-color: #fff;
     color: rgba(0, 0, 255, 0.799);
     padding-left: 10px;
@@ -254,9 +256,8 @@ b {
     margin-left: 430px;
     margin-top: 100px;
 }
-.discord:hover {
-    
-    
+.t {
+    display: none;
 }
 footer {
     width: 50px;
@@ -288,6 +289,12 @@ footer {
     .animation {
         padding-left: 20%;
     }
+    .h {
+        background-color: #000;
+        height: 500px;
+        padding-bottom:90px;
+        margin-bottom: 20px;
+    }
     .first {
         display: grid;
         margin-top: 90px;
@@ -297,6 +304,9 @@ footer {
         display:grid;
         text-align: center;
     }
+    .t {
+        display: block;
+    }
     .foot {
         display: grid;
         text-align: center;
@@ -305,17 +315,16 @@ footer {
         display: none;
     }
     .menubtn {
-        display: flex;
-        padding-left: 900px;
-        font-size: xx-large;
+        display: block;
+        margin-left: 220px;
         color: #000;
-    }
-    .sideNav {
+        font-size: 40px;
+    }    
+        .sideNav {
         height: 100%;
         position: fixed;
         top: 0;
-        right: 0;
-        background-color: #000;
+        right: 10px;
         overflow-x: hidden;
         transition: 0.3s ease-in;
         padding-top: 60px;
@@ -325,21 +334,25 @@ footer {
         display: block !important;
     }
     .sideNav a {
-        padding: 8px 8px 8px 40px;
-        display: block;
-        font-size: 25px;
         color: white;
         transition: 0.3s;
+        padding: 30px 30px 80px 40px;
+        display: block;
+        right: 0;
+        font-size: 40px;
         text-decoration: none;
+        &:hover {
+            color: red;
+        }
     }
     .sideNav .close {
         position: absolute;
         top: 10px;
         right: 25px;
-        font-size: 20px;
+        font-size: 40px;
         margin-left: 50px;
     }
     footer {
-        padding-left: 630px;
+        padding-left: 160px;
     }
 }

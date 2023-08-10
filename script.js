@@ -17,11 +17,14 @@ function showLaunchpad() {
 
 function openNav() {
   document.getElementById("sideNav").innerHTML = `
-  <a href="#" class="close" id="close" onclick="closeNav()">&#10006</a>
-  <a href="#">Docs</a> 
-  <a href="#">Code</a></li>
-  <a href="mailto:blaine@aqueductfinance.com">Contact Us</a>
+ <div class="h">
+ <a href="#" class="close" id="close" onclick="closeNav()">&#10006</a>
+ <a href="https://aqueduct-finance.gitbook.io/">Docs</a> 
+ <a href="https://github.com/aqueduct-finance">Code</a></li>
+ <a href="mailto:blaine@aqueductfinance.com">Contact Us</a>
+ </div>
   `
+  document.getElementById("").style.width = "0%"
 }
 function closeNav() {
   document.getElementById("sideNav").style.width = "0%"
