@@ -11,73 +11,78 @@
 <body>
     <main>
         <div class="nav">
-            <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo"></a>
-            <h1 ><a href="index.html" class="head">aqueduct</a></h1>
+        <div class="me">
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <h1 class="head">aqueduct</h1></div>
             <nav>
+                  <img  onclick="openNav()"  src="assets/download.jpeg"  width="50px">
                 <div class="menu">
-                    <button class="open">&#9776;</button>
-                    <button class="close">&#10006;</button>
-                    
                 <ul>
-                    <li><i class="fas fa-file" style="font-size: x-large;"></i><a href="https://aqueduct-finance.gitbook.io/">Docs</a></li>
-                    <li><i class="fab fa-github" style="font-size: x-large;"></i><a href="https://github.com/aqueduct-finance">Code</a></li>
-                    <li class="btn"><a href="mailto:blaine@aqueductfinance.com">Contact Us</a></li>
+                    <li><i class="fas fa-file" style="font-size: x-large;"></i><a href="#">Docs</a></li>
+                    <li><i class="fab fa-github" style="font-size: x-large;"></i><a href="#">Code</a></li>
+                    <li class="btn"><a href="#">Contact Us</a></li>
+                   
                 </ul>
                   </div>
             </nav>
+            <!-----sidenav-->
+            <div class="sideNav" id="sideNav">
+            </div>
         </div>
-       <div class="first"> <div class="swap">
-        <h1 class="big">Swap tokens <br> every second.</h1>
-        <p class="mid">Aqueduct is the world's first decentralized <br> exchange native to the real-time economy</p>
-        <button>Coming Q3 2023</button>
-    </div>
-    <video src="assets/animation.webm" autoplay loop class="animation"></video>
-</div>
-    <div class="center">
-        <video src="assets/stream_record.webm"  autoplay loop class="stream"></video>
-        <div class="question">
-            <h1 class="what">What is Aqueduct</h1>
-            <p class="answr">Aqueduct is a TWAMM( Time-weighted <br> automated market maker ) 
-                Powered by <br>money streams. As a new primitive for time-<br>based swaps,
-                We enable you to swap tokens<br>every second.
-            </p>
-            <button class="demo"> <a href="https://calendly.com/blaine-aqueduct/15-minute-meeting">Book a Demo</a></button>
-        </div>
-    </div>
-    <div class="bottom">
-        <h3>An onchain solution to time- <br>based swaps. Execute TWAPs <br>with a few clicks</h3>
-        <div class="flex-btn">
-            <button class="fl"  onclick="showAuto()">Automated <br>Investing</button>
-            <button class="fl"  onclick="showOrder()">Large <br>Orders</button>
-            <button class="fl"  onclick="showToken()">Token <br>Divesting</button>
-            <button class="fl"  onclick="showLaunchpad()">Launchpad</button>
-        </div>
-        <div id="auto">
-            <h2>Automated <br>Investing</h2><p>Effortlessly acquire your preferred<br> token over time with a few clicks.<br> Simply choose a token pair, indicate<br> the desired swap rate, and then<br> leave the rest to us. Embrace the<br> convenience of growing your<br> portfolio as you watch your<br> investment accumulate, second by<br> second.</p>
-        </div>
-        <button class="learn"><a href="https://www.aqueduct.fi/investing">Learn More </a></button>
-    </div>
-    <div class="foot">
-        <button class="twitter">
-            <a href="https://twitter.com/AqueductFinance">
-                <h2>Stay up to date <img src="assets/twitter.svg" alt="Twitter" style="fill: red;" class="ic"></h2>
-            
-            <p>Join <b>2268</b> followers on twitter</p>
-            </a>
-        </button>
-        <button class="discord">
-           <a href="https://discord.gg/6dDYxvhqnt">
-            <h2>
-                Get involved
-                <img src="assets/discord.svg" alt="Discord" class="ic">
-            </h2>
-            
-            <p>
-                Join <b>216</b> members on Discord
-            </p>
-           </a>
-        </button>
-    </div>
+        <div class="grid">
+            <div class="first">
+                 <div class="swap">
+             <h1 class="big">Swap tokens <br> every second.</h1>
+             <p class="mid">Aqueduct is the world's first decentralized <br> exchange native to the real-time economy</p>
+             <button>Coming Q3 2023</button>
+         </div>
+         <video src="assets/animation.webm" autoplay loop class="animation"></video>
+     </div>
+         <div class="center">
+             <video src="assets/stream_record.webm"  autoplay loop class="stream"></video>
+             <div class="question">
+                 <h1 class="what">What is Aqueduct</h1>
+                 <p class="answr">Aqueduct is a TWAMM( Time-weighted <br> automated market maker ) 
+                     Powered by <br>money streams. As a new primitive for time-<br>based swaps,
+                     We enable you to swap tokens<br>every second.
+                 </p>
+                 <button class="demo"> <a href="https://calendly.com/blaine-aqueduct/15-minute-meeting">Book a Demo</a></button>
+             </div>
+         </div>
+         <div class="bottom">
+             <h3>An onchain solution to time- <br>based swaps. Execute TWAPs <br>with a few clicks</h3>
+             <div class="flex-btn">
+                 <button class="fl"  onclick="showAuto()">Automated <br>Investing</button>
+                 <button class="fl"  onclick="showOrder()">Large <br>Orders</button>
+                 <button class="fl"  onclick="showToken()">Token <br>Divesting</button>
+                 <button class="fl"  onclick="showLaunchpad()">Launchpad</button>
+             </div>
+             <div id="auto">
+                 <h2>Automated <br>Investing</h2><p>Effortlessly acquire your preferred<br> token over time with a few clicks.<br> Simply choose a token pair, indicate<br> the desired swap rate, and then<br> leave the rest to us. Embrace the<br> convenience of growing your<br> portfolio as you watch your<br> investment accumulate, second by<br> second.</p>
+             </div>
+             <button class="learn"><a href="https://www.aqueduct.fi/investing">Learn More </a></button>
+         </div>
+         <div class="foot">
+             <button class="twitter">
+                 <a href="https://twitter.com/AqueductFinance">
+                     <h2>Stay up to date <img src="assets/twitter.svg" alt="Twitter" style="fill: red;" class="ic"></h2>
+                 
+                 <p>Join <b>2268</b> followers on twitter</p>
+                 </a>
+             </button>
+             <button class="discord">
+                <a href="https://discord.gg/6dDYxvhqnt">
+                 <h2>
+                     Get involved
+                     <img src="assets/discord.svg" alt="Discord" class="ic">
+                 </h2>
+                 
+                 <p>
+                     Join <b>216</b> members on Discord
+                 </p>
+                </a>
+             </button>
+         </div></div>
     <footer>
        <ul>
         <a href="https://twitter.com/AqueductFinance"><img src="assets/twitter (1).svg" alt="Twitter" class="ic"></a>

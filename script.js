@@ -1,3 +1,5 @@
+"use strict"
+
 function showAuto() {
   document.getElementById("auto").innerHTML = "<h2>Automated <br>Investing</h2><p>Effortlessly acquire your preferred<br> token over time with a few clicks.<br> Simply choose a token pair, indicate<br> the desired swap rate, and then<br> leave the rest to us. Embrace the<br> convenience of growing your<br> portfolio as you watch your<br> investment accumulate, second by<br> second.</p>";
 }
@@ -12,18 +14,16 @@ function showLaunchpad() {
 }
 
 
-const menu = document.querySelector('.menu');
-const openBtn = document.querySelector('.open');
-const closeBtn = document.querySelector('.close');
 
-openBtn.addEventListener('click', () => {
-  menu.classList.add('open');
-  openBtn.classList.add('close');
-  closeBtn.classList.remove('close');
-});
+function openNav() {
+  document.getElementById("sideNav").innerHTML = `
+  <a href="#" class="close" id="close" onclick="closeNav()">&#10006</a>
+  <a href="#">Docs</a> 
+  <a href="#">Code</a></li>
+  <a href="mailto:blaine@aqueductfinance.com">Contact Us</a>
+  `
+}
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0%"
+}
 
-closeBtn.addEventListener('click', () => {
-  menu.classList.remove('open');
-  openBtn.classList.remove('close');
-  closeBtn.classList.add('close');
-});
